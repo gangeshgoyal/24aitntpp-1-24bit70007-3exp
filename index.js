@@ -11,4 +11,6 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to Card Collection API 🚀" });
 });
 
+app.use("/cards", cardRoutes);
+
 export default app;
